@@ -39,3 +39,12 @@ Challenges and Enhancements While building a basic quiz app is relatively straig
 Conclusion The Quiz App project is a perfect learning tool for those looking to build their skills in JavaScript and web development. It involves various essential concepts such as DOM manipulation, event handling, and state management, making it an ideal project for beginners. Additionally, the app can be expanded and customized to meet specific user needs or to integrate advanced features, providing endless opportunities for learning and growth in software development.
 
 OUTPUT:
+
+![Screenshot_22-3-2025_165820_127 0 0 1](https://github.com/user-attachments/assets/c81ddf31-a2d7-4d09-9315-7042aad25391)
+
+![Screenshot_22-3-2025_165847_127 0 0 1](https://github.com/user-attachments/assets/b3c6778f-4d14-4a07-a6b6-13b06fafa3e3)
+
+![Screenshot_22-3-2025_17045_127 0 0 1](https://github.com/user-attachments/assets/acd55182-5e1e-494c-8447-3607e7aa3f4c)
+
+
+
