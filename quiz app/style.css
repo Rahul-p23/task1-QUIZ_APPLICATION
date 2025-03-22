@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #1a1a2e, #16213e);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.container .question {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.container .choices {
+    margin-top: 20px;
+}
+
+.choice {
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #f0f0f0;
+}
+
+.choice.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.scoreCard {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.alert {
+    background-color: #dc3545;
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    top: 20px;
+    display: none;
+}
+
+.startBtn {
+    width: 10%;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.startBtn:hover {
+    background-color: #0056b3;
+}
+
+.timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #16213e;
+    border: 2px solid #f00;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+/* Adding Animation to Timer */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .container h1 {
+        font-size: 24px;
+    }
+    .container .question {
+        font-size: 20px;
+    }
+    .timer {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .startBtn {
+        width: 70%;
+    }
+}
